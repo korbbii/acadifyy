@@ -14,7 +14,7 @@
       <a href="user.html">User Guide</a> 
       <a href="about.html">About Us</a>
     </nav>
-  </div>
+  </div><br><br>
   <div class="rectangular-backgrounddd1">
     <div class="welcome"><h2>About Us</h2></div>
   </div><br><br> 
@@ -30,7 +30,7 @@
         <img src="facebook.png" alt="Facebook Logo">
     </div>
 </div>
-</div>
+</div><br>
 <div class="circle1">
     <div>
       <img src="atay.jpg" class="circle">
@@ -42,7 +42,7 @@
         <img src="facebook.png" alt="Facebook Logo">
     </div>
 </div>
-</div>
+</div><br>
 <div class="circle1">
     <div>
       <img src="junjun.jpg" class="circle">
@@ -54,17 +54,17 @@
         <img src="facebook.png" alt="Facebook Logo">
     </div>
 </div>
-</div>
+</div><br>
 <div class="circle1">
     <div class="circle"></div>
     <div class="text">
-        <h2>Mark E. Sagrado</h2>
+        <h2>Derrick C. Sagrado</h2>
         <p><strong>Role:</strong> UI/UX</p>
     <div class="logo-container">
         <img src="facebook.png" alt="Facebook Logo">
     </div>
 </div>
-</div>
+</div><br>
 <div class="circle1">
     <div class="circle"></div>
     <div class="text">
@@ -93,18 +93,9 @@
   </ul><br>
   <p style="text-align: center;"> Join us on this journey to transform the way students learn and collaborate. Together, we can build a brighter future for education: </p><br><br><br>
   <h2 style="text-align: center;"> Contact Us </h2><br>
-  <div class="rectanglee11">
-    <p> Name </p>
+  <div>
+    <img src="Provide Feedback and Suggestions/first.png" class="rectanglee11">
   </div>
-  <div class="rectanglee12"><br>
-    <p> Email </p>
-</div>
-<div class="rectanglee13"><br><br>
-    <p> Message </p>
-</div>
-<div class="rectanglee14"><br><br><br><br><br><br><br>
-    <p style="text-align: center;"> Submit </p>
-</div>
 <div class="rectangle15"><br><Br>
     <h3 style="text-align: center; color: white;"> Reach Us </h3><br>
     <p style="text-align: center; color: white;">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; example@gmail.com</p><br>
@@ -112,31 +103,30 @@
     <p style="text-align: center; color: white;">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gingoog City, 9014</p><br>
     <p style="text-align: center; color: black; margin-top: 2.4rem;">.</p><br>
 </div>
-  <footer>
-    <div class="footer">
-      <p>
-        Go up<br><br>Acadify@2024
-      </p>
-    </div>
-  </footer>
-  <script>
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        var scrollPercentage = (scrollPosition / maxScroll) * 100;
+<footer>
+  <div class="footer">
+    <button id="goUpButton">Go up</button><br>
+  <br><p>Acadify@2024</p>
+  </div>
+</footer>
+<script>
+      document.getElementById('goUpButton').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
-        // Calculate the darkness of the background color based on scroll percentage
-        var darkness = (scrollPercentage / 100) * 150; // Adjust 150 for the maximum darkness
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      var scrollPercentage = (scrollPosition / maxScroll) * 100;
 
-        // Set the background color with the calculated darkness
-        var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
-        document.body.style.backgroundColor = backgroundColor;
+      var darkness = (scrollPercentage / 100) * 150;
 
-        // Adjust font color based on background darkness
-        var fontColor = darkness > 100 ? '#fff' : '#000';
-        document.body.style.color = fontColor;
-    });
+      var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
+      document.body.style.backgroundColor = backgroundColor;
+
+      var fontColor = darkness > 100 ? '#fff' : '#000';
+      document.body.style.color = fontColor;
+  });
 </script>
-
 </body>
 </html>

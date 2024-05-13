@@ -15,7 +15,8 @@
       <a href="about.html">About Us</a>
     </nav>
   </div>
-  <div class="rectangle4">
+  <div>
+    <img src="navigate.png" class="rectangle4">
   </div><br><br> 
     <div>
         <center>
@@ -54,7 +55,7 @@
         <li>Verify your email address to activate your account.</li>
       </ul>
       <div class="purpose"><br><br><br><br>
-        <center><br><h1>Explore Academic Resources</h1></center>
+        <center><br><h1>Explore Academic Resources</h1></center><br><br>
         <img src="./Explore Academic Resources/Screenshot 2024-05-08 045519.png" class="rectangle6c">
         <div>
         </div>
@@ -68,7 +69,7 @@
           </ul>
           </div>
           <div class="purpose"><br><br><br><br>
-            <center><br><h1>Upload and Share Resources</h1></center>
+            <center><br><h1>Upload and Share Resources</h1></center><br>
             <div>
               <img src="./Upload and Share Resources/third.png" class="rectangle8">
             </div>
@@ -91,12 +92,12 @@
               </ul>
               </div>
               <div class="purpose"><br><br><br><br>
-                <center><br><h1>Engage with the Community</h1></center>
+                <center><br><h1>Engage with the Community</h1></center><br><br>
                 <div>
                   <img src="./Engage with the Community/second.png" class="rectangle6">
                 </div>
                 <div>
-                  <img src="./Engage with the Community/first.png" class="rectangle7">
+                  <img src="./Engage with the Community/first.png" class="rectangle7cc">
                 </div>
                 <ul class="stepss">
                     <li>Join discussion forums, group chats, and virtual study groups to interact with other users.</li>
@@ -105,7 +106,7 @@
                   </ul>
                   </div>
                   <div class="purpose"><br><br><br><br>
-                    <center><br><h1>Cuztomize your Profile</h1></center>
+                    <center><br><h1>Cuztomize your Profile</h1></center><br>
                     <div>
                       <img src="./Customize Your Profile/first.png" class="rectangle8c">
                     </div>
@@ -179,32 +180,30 @@
     </div>
 <br><br>
 <p><center>We value input from our users and stakeholders. Your feedback and suggestions are essential for shaping the future direction of Acadify. Please feel free to share your ideas, requests, or concerns through our feedback form or contact us directly. Together, we can continue to enhance Acadify and make academic resources more accessible to everyone.</p></center>
-  <footer>
-    <div class="footer">
-      <p>
-        Go up<br><br>Acadify@2024
-      </p>
-    </div>
-  </section>
-  </footer>
-  <script>
-    window.addEventListener('scroll', function() {
-        var scrollPosition = window.scrollY;
-        var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        var scrollPercentage = (scrollPosition / maxScroll) * 100;
+<footer>
+  <div class="footer">
+    <button id="goUpButton">Go up</button><br>
+  <br><p>Acadify@2024</p>
+  </div>
+</footer>
+<script>
+      document.getElementById('goUpButton').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
-        // Calculate the darkness of the background color based on scroll percentage
-        var darkness = (scrollPercentage / 100) * 150; // Adjust 150 for the maximum darkness
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      var scrollPercentage = (scrollPosition / maxScroll) * 100;
 
-        // Set the background color with the calculated darkness
-        var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
-        document.body.style.backgroundColor = backgroundColor;
+      var darkness = (scrollPercentage / 100) * 150;
 
-        // Adjust font color based on background darkness
-        var fontColor = darkness > 100 ? '#fff' : '#000';
-        document.body.style.color = fontColor;
-    });
+      var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
+      document.body.style.backgroundColor = backgroundColor;
+
+      var fontColor = darkness > 100 ? '#fff' : '#000';
+      document.body.style.color = fontColor;
+  });
 </script>
-
 </body>
 </html>

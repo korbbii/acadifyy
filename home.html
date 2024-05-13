@@ -14,7 +14,7 @@
       <a href="user.html">User Guide</a> 
       <a href="about.html">About Us</a>
     </nav>
-  </div>
+  </div><br>
   <div class="rectangular-background1">
     <div class="welcome"><h2>Welcome to Acadify</h2></div>
   </div><br><br> 
@@ -22,9 +22,9 @@
       Where knowledge meets collaboration! Acadify is a non-profit platform dedicated to helping students access academic resources and foster a supportive learning community.
     </div><br>
     <center>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+    <div>
+      <img src="welcome.png" class="square">
+    </div>
   </center>
     <div class="purpose">
       <center><br>Acadify is a student-led initiative that aims to bridge the gap in academic resource accessibility. <br>Our platform allows students to share and access study materials, notes, and resources for free, creating a culture of knowledge-sharing and support.</center>
@@ -36,7 +36,8 @@
           </div>
         </div><br>  
         <div class="objectives">
-          <div class="square1">
+          <div>
+            <img src="overview.png" class="square1">
           </div>
           <h3>Purpose and Objectives</h3>
           <p>Acadify was created with a clear purpose: to address the challenges that students face in accessing academic resources. <br>The primary goals of Acadify are:</p>
@@ -50,7 +51,8 @@
           <h3>Problem Statement and Need</h3>
           <p>The idea for Acadify emerged from the observation that many students encounter obstacles in acquiring costly academic resources, which can hinder their educational progress. Acadify seeks to bridge this gap by creating a platform where students can share their unused study materials and benefit from resources contributed by others.</p>
             <br>
-            <div class="rectangle1">
+            <div>
+              <img src="./Upload and Share Resources/first.png" class="rectangle1">
             </div>
             <br>
             <br>The need for Acadify is evident in the growing demand for accessible and affordable educational resources. By offering a centralized platform for resource sharing and community engagement, Acadify aims to democratize education and promote a culture of knowledge exchange among students.</p><br><br>
@@ -226,7 +228,7 @@
     <section>
         <h2 style="color: black;">References</h2>
     </div>
-  </div>
+  </div><br>
         <p>During the development of Acadify, we drew inspiration and references from various academic platforms and resources.</p>
         <ol>
           <li>
@@ -255,30 +257,28 @@
   </div><br>
   <footer>
     <div class="footer">
-      <p>
-        Go up<br><br>Acadify@2024
-      </p>
+      <button id="goUpButton">Go up</button><br>
+    <br><p>Acadify@2024</p>
     </div>
   </footer>
   <script>
+        document.getElementById('goUpButton').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
         var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
         var scrollPercentage = (scrollPosition / maxScroll) * 100;
 
-        // Calculate the darkness of the background color based on scroll percentage
-        var darkness = (scrollPercentage / 100) * 150; // Adjust 150 for the maximum darkness
+        var darkness = (scrollPercentage / 100) * 150;
 
-        // Set the background color with the calculated darkness
         var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
         document.body.style.backgroundColor = backgroundColor;
 
-        // Adjust font color based on background darkness
         var fontColor = darkness > 100 ? '#fff' : '#000';
         document.body.style.color = fontColor;
     });
 </script>
-
-
 </body>
 </html>
