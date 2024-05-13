@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acadify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Acadify</h1>
+    <nav>
+      <a href="home.html">Home</a> 
+      <a href="user.html">User Guide</a> 
+      <a href="about.html">About Us</a>
+    </nav>
+  </div>
+  <div class="rectangular-background1">
+    <div class="welcome"><h2>Welcome to Acadify</h2></div>
+  </div><br><br> 
+    <div style="text-align: center; margin-left: 20rem; margin-right: 20rem;" class="purpose">
+      Where knowledge meets collaboration! Acadify is a non-profit platform dedicated to helping students access academic resources and foster a supportive learning community.
+    </div><br>
+    <center>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </center>
+    <div class="purpose">
+      <center><br>Acadify is a student-led initiative that aims to bridge the gap in academic resource accessibility. <br>Our platform allows students to share and access study materials, notes, and resources for free, creating a culture of knowledge-sharing and support.</center>
+    </div>
+    <section class="project-overview">
+        <div class="rectangular-background2">
+        <div class="purpose">
+          <h3>Project Overview</h3>
+          </div>
+        </div><br>  
+        <div class="objectives">
+          <div class="square1">
+          </div>
+          <h3>Purpose and Objectives</h3>
+          <p>Acadify was created with a clear purpose: to address the challenges that students face in accessing academic resources. <br>The primary goals of Acadify are:</p>
+          <ul>
+            <li>Facilitate Resource Sharing: Provide a platform where students can freely share and access academic materials such as PDF books, journals, <br>articles, and school notes.</li>
+            <li>Foster Community Collaboration: Build a supportive community where students can interact, discuss topics, and collaborate on academic endeavors.</li>
+            <li>Promote Educational Equity: Ensure that all students, regardless of financial constraints, have access to essential academic resources to support their learning journeys.</li><br><br><br>
+          </ul>
+        </div><br>
+        <div class="problem">
+          <h3>Problem Statement and Need</h3>
+          <p>The idea for Acadify emerged from the observation that many students encounter obstacles in acquiring costly academic resources, which can hinder their educational progress. Acadify seeks to bridge this gap by creating a platform where students can share their unused study materials and benefit from resources contributed by others.</p>
+            <br>
+            <div class="rectangle1">
+            </div>
+            <br>
+            <br>The need for Acadify is evident in the growing demand for accessible and affordable educational resources. By offering a centralized platform for resource sharing and community engagement, Acadify aims to democratize education and promote a culture of knowledge exchange among students.</p><br><br>
+        </div>
+        <div class="purposes">
+          <h2>Technologies and Tools Used in Development</h2>
+        </div>
+        <p>
+          Acadify leverages a modern technology stack to deliver a seamless user experience and robust functionality. <br>The development of Acadify involves the use of:
+        </p><br>
+        <div class="technologies">
+          <ul>
+              <li>Frontend Technologies: HTML, CSS, JavaScript (React.js)</li>
+              <li>Backend Technologies: Node.js, Express.js</li>
+              <li>Database: MongoDB</li>
+              <li>Authentication and Security: JSON Web Tokens (JWT), bcrypt.js</li>
+              <li>Deployment: Docker, AWS (Amazon Web Services)</li>
+          </ul>
+        </div><br>
+      <p>
+          These technologies were carefully chosen to ensure scalability, security, and responsiveness in Acadify's design and functionality. They enable us to create a user-friendly platform that meets the diverse needs of our student community. In summary, Acadify is not just a platform—it's a movement towards educational inclusivity and collaboration. Join us in this journey to revolutionize the way students access and share academic resources. Together, we can make learning more accessible and equitable for all.
+      </p> 
+    </div>     
+      </section>      
+    <section class="architecture">
+      <div class="rectangular-background3">
+        <div class="purpose">
+        <h2>Architecture</h2>
+      </div>
+      </div><br>
+        <center>
+        <p>Acadify's architecture is designed to support efficient resource sharing, community interaction, <br>and seamless user experiences. Below is an overview of the project's architecture, <br>describing its key components and interactions.</p><br>
+        </center>
+        <div>
+          <img src="arch.jpg" class="rectangle2">
+        </div>
+        <center>
+        <p><b> Architecture Diagram </b></p><br>
+      </center>
+      <br><p>The architecture of Acadify consists of several components that work together to deliver a cohesive platform for students:</p><br>
+          <ol>
+            <li>
+              <h4>Frontend (Client-Side):</h4>
+              <p>The frontend of Acadify is built using React.js, a popular JavaScript library for building user interfaces. It provides a responsive and interactive experience for users accessing the platform through web browsers.</p>
+            </li>
+            <li>
+              <h4>Backend (Server-Side):</h4>
+              <p>The backend of Acadify is powered by Node.js and Express.js, which handle server-side logic and API endpoints. This component manages data retrieval, storage, and authentication processes.</p>
+            </li>
+            <li>
+              <h4>Database Management:</h4>
+              <p>Acadify utilizes MongoDB, a NoSQL database, to store and manage academic resources, user profiles, and community interactions. MongoDB's flexibility and scalability are leveraged to accommodate dynamic data requirements.</p>
+            </li>
+            <li>
+              <h4>Authentication and Security:</h4>
+              <p>Authentication and security measures are implemented using JSON Web Tokens (JWT) for user authentication and authorization. Passwords are securely hashed using bcrypt.js to protect user credentials.</p>
+            </li>
+            <li>
+              <h4>Deployment and Infrastructure:</h4>
+              <p>Acadify is deployed using WordPress, a popular content management system (CMS), which provides flexibility and scalability for managing and hosting the platform's content and functionalities. WordPress allows for easy customization and integration of plugins, making it suitable for Acadify's requirements.</p>
+            </li>
+          </ol>
+        <div class="components-interactions">
+          <h3>Components and Interactions</h3>
+          <ul>
+            <li><strong>Client-Server Interaction:</strong> The frontend communicates with the backend server via RESTful API endpoints to fetch data and perform CRUD (Create, Read, Update, Delete) operations on resources.</li>
+            <li><strong>Database Integration:</strong> MongoDB is integrated with the backend to store and retrieve data efficiently. Data models and schemas are defined to maintain consistency and structure within the database.</li>
+            <li><strong>Authentication Flow:</strong> User authentication is managed through JWT tokens, where users receive tokens upon successful login and use them to access protected routes and resources.</li>
+          </ul>
+        </div>
+      
+        <div class="detailed-docs">
+          <h3>Detailed Architecture Documentation</h3>
+          <p>For more detailed information on Acadify's architecture, you can refer to our comprehensive architecture documentation, which includes detailed diagrams, component descriptions, and interaction flows. Please click <a href="user.html">here</a> to access the detailed documentation.</p>
+        </div>
+      </section>
+      
+      <section class="development-process">
+        <div class="rectangular-background4">
+        <div class="purpose">
+          <h2>Development Process</h2>
+        </div>
+        </div><br>
+        <p style="margin-left: 5rem;"> At Acadify, we follow a structured development process that emphasizes collaboration, iterative improvement, and responsiveness to user feedback. <br>Below is an overview of our development methodology, stages, and challenges encountered during the project lifecycle. </p><br>
+        <div>
+          <img src="Work Breakdown (1).jpg" class="rectangle33">
+        </div>
+        <center>
+          <p><b> Work Breakdown Structure </b></p><br>
+        </center>
+        <div class="methodology">
+          <h3>Methodology</h3>
+          <p>The development of Acadify adopts an agile methodology, which allows for continuous iteration and adaptation to evolving requirements. Agile principles guide our approach, promoting transparency, flexibility, and stakeholder engagement throughout the development cycle.</p><br>
+        </div>
+        <div class="project-development-plan">
+          <h3>Project Development Plan</h3>
+          <p>Acadify is currently in the prototype stage, where we are conceptualizing and designing the platform before entering the development phase. Here's an overview of our development plan:</p>
+          <ol>
+            <li><strong>Initiation Phase</strong>
+              <ul>
+                <li>Team Foundation: Establish the core project team and define roles and responsibilities.</li>
+                <li>Stakeholder & Communication: Identify project stakeholders and gather input.</li>
+                <li>Research: Conduct market research and user surveys to understand needs and preferences.</li>
+              </ul>
+            </li>
+            <li><strong>Planning Phase</strong>
+              <ul>
+                <li>Scope Definition: Define the scope of Acadify's prototype, outlining key features and functionalities.</li>
+                <li>Goal Setting: Set clear objectives and success criteria for the prototype.</li>
+                <li>Low-Fidelity Planning: Create initial sketches and wireframes to visualize the platform's layout and structure.</li>
+              </ul>
+            </li>
+            <li><strong>Execution Phase</strong>
+              <ul>
+                <li>Prototype Development: Build a low-fidelity prototype using tools like Figma to represent the user interface and interactions.</li>
+                <li>High Fidelity Initiation: Transition low-fidelity designs to high-fidelity prototypes for refined user experience.</li>
+              </ul>
+            </li>
+            <li><strong>Monitoring Phase</strong>
+              <ul>
+                <li>Testing Prototype: Conduct usability testing and gather feedback from potential users to identify areas for improvement.</li>
+                <li>Refinements: Make refinements based on user feedback to enhance the prototype's functionality and usability.</li>
+              </ul>
+            </li>
+            <li><strong>Closure Phase</strong>
+              <ul>
+                <li>Reviewing Prototype: Evaluate the final prototype against project goals and objectives.</li>
+                <li>Documentation Gathering: Compile documentation including design specifications and user feedback.</li>
+                <li>Presentation of Prototype: Present the prototype to stakeholders and gather final input before proceeding to the development phase.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="challenges-solutions">
+          <br><h3>Challenges and Solutions</h3>
+          <ul>
+            <li><strong>Technical Complexity:</strong> Integrating diverse technologies and ensuring compatibility posed challenges during development. Regular code reviews, collaboration among team members, and leveraging community resources helped address technical hurdles.</li>
+            <li><strong>User Engagement:</strong> Encouraging user participation and fostering a vibrant community required strategic initiatives. We implemented incentive contributions and solicited feedback to enhance user engagement.</li>
+            <li><strong>Scalability:</strong> Planning for scalability and performance optimization was crucial to accommodate growing user demands. We adopted cloud-based solutions and optimized database queries to enhance system responsiveness.</li>
+          </ul>
+          <br><p>Through effective communication, teamwork, and an adaptive approach, we successfully navigated these challenges, delivering a robust and user-centric platform in alignment with Acadify's vision and goals.</p>
+        </div>
+      </section>
+      
+    <div class="rectangular-background5">
+    <div class="purpose">
+        <section>
+              <h2 style="color: black;">Acknowledgment</h2>
+            </div>
+            </div><br>
+              <p>We extend our heartfelt gratitude to the following individuals, mentors/advisors, sponsors, organizations, and team members whose support and contributions have been invaluable in the development of Acadify:</p><br>
+              <ul>
+                <li><strong>Mentors / Advisors:</strong>
+                  <ul>
+                    <li><strong>Sir Reajun Artajo:</strong> Thank you for providing guidance, feedback, and mentorship throughout the project's development. Your expertise and insights have been instrumental in shaping Acadify's vision.</li>
+                  </ul>
+                </li>
+                <li><strong>Sponsors and Supporting Organizations:</strong>
+                  <ul>
+                    <li><strong>Geraldine A. Asmod:</strong> We are grateful for your financial support and sponsorship, which has enabled us to pursue the development of Acadify and bring our vision to life.</li>
+                  </ul>
+                </li>
+                <li><strong>Team Members:</strong>
+                  <ul>
+                    <li>Acknowledgment to all project team members for their dedication and hard work in bringing Acadify to fruition.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+    <div class="rectangular-background6">
+    <div class="purpose">
+    <section>
+        <h2 style="color: black;">References</h2>
+    </div>
+  </div>
+        <p>During the development of Acadify, we drew inspiration and references from various academic platforms and resources.</p>
+        <ol>
+          <li>
+            <h3>Academia.edu</h3>
+            <p>Website: <a href="https://academia.edu">academia.edu</a></p>
+            <p>Description: Academia.edu is a platform for academics to share research papers. It enables students and researchers to discover academic resources and connect with peers in their fields.</p>
+          </li>
+          <li>
+            <h3>Studypool</h3>
+            <p>Website: <a href="https://studypool.com">studypool.com</a></p>
+            <p>Description: Studypool is an online marketplace that connects students with tutors for academic help and assistance. It offers a platform for students to collaborate and seek guidance on various academic subjects.</p>
+          </li>
+          <li>
+            <h3>ResearchGate</h3>
+            <p>Website: <a href="https://researchgate.net">researchgate.net</a></p>
+            <p>Description: ResearchGate is a professional network for researchers and scientists to share and access scientific publications, research data, and collaborations. It fosters community engagement and academic networking.</p>
+          </li>
+          <li>
+            <h3>Google Scholar</h3>
+            <p>Website: <a href="https://scholar.google.com">scholar.google.com</a></p>
+            <p>Description: Google Scholar is a freely accessible web search engine that indexes scholarly literature across various disciplines. It provides a vast collection of academic articles, journals, and research papers.</p>
+          </li>
+        </ol>
+        <p>We acknowledge their contributions to the development and vision of Acadify as a collaborative platform for academic resource sharing.</p>
+      </section>
+  </div><br>
+  <footer>
+    <div class="footer">
+      <p>
+        Go up<br><br>Acadify@2024
+      </p>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        var scrollPercentage = (scrollPosition / maxScroll) * 100;
+
+        // Calculate the darkness of the background color based on scroll percentage
+        var darkness = (scrollPercentage / 100) * 150; // Adjust 150 for the maximum darkness
+
+        // Set the background color with the calculated darkness
+        var backgroundColor = 'rgb(' + (245 - darkness) + ', ' + (229 - darkness) + ', ' + (244 - darkness) + ')';
+        document.body.style.backgroundColor = backgroundColor;
+
+        // Adjust font color based on background darkness
+        var fontColor = darkness > 100 ? '#fff' : '#000';
+        document.body.style.color = fontColor;
+    });
+</script>
+
+
+</body>
+</html>
